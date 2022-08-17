@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="abhi.example.hp.stenobano">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission
+        android:name="android.permission.MANAGE_DOCUMENTS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+   <!-- <uses-sdk tools:overrideLibrary="com.truecaller.android.sdk"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>-->
+
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false"/>
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_black_icon_steno_bano"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_black_icon_steno_bano"
+        android:theme="@style/AppTheme"
+        android:supportsRtl="true"
+        android:requestLegacyExternalStorage="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        android:hardwareAccelerated="true"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup">
+        <!--android:usesCleartextTraffic="true"-->
+        <!--android:networkSecurityConfig="@xml/network_security_config"-->
+        <activity android:name=".user.Setting"
+            android:exported="false"/>
+        <activity android:name=".user.PlayAudioImage"
+            android:theme="@style/AppTheme2"
+            android:exported="false"
+            />
+        <activity
+            android:name=".user.GetDataNew"
+            android:label="Steno Bano"
+            android:exported="false"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".player.PlayAudioAndImageView"
+            android:exported="false"
+            android:theme="@style/AppTheme2" />
+
+        <activity
+            android:name=".user.PlayOfflineAudioImage"
+            android:exported="false"
+            android:theme="@style/AppTheme2"/>
+
+        <activity
+            android:name=".player.LongPlayAudioAndImage"
+            android:theme="@style/AppTheme2"
+            android:exported="false"/>
+        <activity
+            android:name=".user.Profile"
+            android:theme="@style/AppTheme2"
+            android:exported="false"/>
+        <activity
+            android:name=".user.ViewSendRequest"
+            android:theme="@style/AppTheme2"
+            android:exported="false"/>
+        <activity android:name=".user.SendRequetToUpdate"
+            android:exported="false"/>
+        <activity android:name=".gatway.PaytmGatway"
+            android:exported="false"/>
+        <activity android:name=".auth.LoginToOTP"
+            android:exported="false"/>
+
+        <activity
+            android:name=".auth.OTP_Page"
+            android:theme="@style/AppTheme2"
+            android:exported="false"/>
+        <activity
+            android:name=".notification.ResultNotification"
+            android:theme="@style/AppTheme2"
+            android:exported="false"/>
+        <activity android:name=".user.Help" />
+        <activity
+            android:name=".user.Splash_Screen"
+            android:theme="@style/AppTheme3"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Dashboard.User_Home"
+            android:label="Home"
+            android:exported="false"
+            android:theme="@style/AppTheme4" />
+        <activity
+            android:name=".auth.Login"
+            android:enabled="true"
+            android:exported="false"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".auth.Registration"
+            android:exported="false"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".user.Play_and_Download"
+            android:label="Play Audio"
+            android:exported="false"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".user.Play_Audio_Details"
+            android:label="Play Audio"
+            android:exported="false"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".user.Searching"
+            android:exported="false"
+            android:label="Search" />
+        <activity
+            android:name=".user.Job_Notification"
+            android:exported="false"
+            android:label="Job Notification" />
+        <activity
+            android:name=".user.Get_Data"
+            android:label="Steno Bano"
+            android:exported="false"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".user.Notification_details"
+            android:exported="false"
+            android:label="Notification Details" />
+        <activity
+            android:name=".user.Steno_Job_Notification"
+            android:label="Job Notification"
+            android:exported="false"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".user.Type_Searching"
+            android:label="Search"
+            android:exported="false"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".user.Forgot_Passord"
+            android:label="Forgot Password"
+            android:exported="false"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".user.Renewal_History"
+            android:exported="false"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".user.Offline_File"
+            android:theme="@style/AppTheme2"
+            android:exported="false"/>
+        <activity android:name=".user.Play_Offline_View"
+            android:exported="false"/>
+        <activity android:name=".user.Long_Speed_Test"
+            android:exported="false"/>
+        <activity
+            android:name=".user.Get_Long_speed_Test"
+            android:exported="false"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".user.Long_Play_View_Speed_Test"
+            android:exported="false"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".user.View_Notificaon_image"
+            android:exported="false"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".user.GetSearch_Result"
+            android:exported="false"
+            android:theme="@style/AppTheme2" />
+
+        <receiver
+            android:name=".fcm.MyReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:priority="0">
+            <intent-filter>
+                <data android:scheme="abhi.example.hp.steno_bano" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".other_class.SingleUploadBroadcastReceiver" />
+
+        <service
+            android:name=".fcm.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:exported="false"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

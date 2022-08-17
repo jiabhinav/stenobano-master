@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.Get_Data">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/toolbar"
+        android:background="@drawable/actionbar_bg">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Ex. number here ..."
+            android:layout_marginRight="30dp"
+            android:id="@+id/search"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:drawableTint="@color/white"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/ic_search_black_24dp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerlist"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="5pt">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
+
+</layout>

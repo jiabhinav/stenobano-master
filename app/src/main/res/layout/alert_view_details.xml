@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+        <abhi.example.hp.stenobano.user.ZoomLinearLayout
+            android:id="@+id/zoom"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+
+                android:id="@+id/alertimage"
+                android:layout_width="match_parent"
+                android:layout_height="100pt"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center_horizontal"
+               />
+        </abhi.example.hp.stenobano.user.ZoomLinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Animal"
+        android:padding="4pt"
+        android:background="#ccd4d4"
+        android:textAlignment="center"
+        android:id="@+id/title"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        android:layout_below="@+id/zoom"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="center_horizontal"/>
+
+</RelativeLayout>

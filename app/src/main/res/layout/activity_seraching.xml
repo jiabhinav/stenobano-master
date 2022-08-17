@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.Searching">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card">
+
+
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+
+        android:id="@+id/toolbar">
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_back"
+    android:id="@+id/back"
+
+    />
+        <AutoCompleteTextView
+            android:id="@+id/searchEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_marginRight="50dp"
+            android:paddingLeft="5pt"
+            android:drawableLeft="@drawable/ic_search"
+            android:hint="Search items here..."
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#080808"
+            android:textColorHint="#918889" >
+        </AutoCompleteTextView>
+
+        <ImageView
+            android:id="@+id/clear"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/ic_clear" />
+
+    </androidx.appcompat.widget.Toolbar>
+</androidx.cardview.widget.CardView>
+
+     <androidx.recyclerview.widget.RecyclerView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:id="@+id/recyclerView"
+         android:layout_marginTop="5pt"
+         android:layout_below="@+id/card">
+
+     </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_gradinat"
+        android:layout_weight=".35">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_top_bg"
+            android:adjustViewBounds="true"
+            android:rotation="180"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/white"
+            android:id="@+id/back"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_chevron_left_black_28dp">
+
+        </ImageView>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/stenobano_logo"
+            android:adjustViewBounds="true"
+            android:layout_centerInParent="true"
+            android:id="@+id/logo">
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing=".1"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:text="OTP">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text= "Logout,Click Here"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight=".1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentBottom="true"
+            >
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/login"
+                android:id="@+id/scroll">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:id="@+id/ll"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/black"
+                        android:text="OTP will be come on your registered email ID if you not get OTP then call to customer care. 7290000723"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/otp"
+                        android:textColor="@color/black"
+                        android:textSize="24dp"
+                        android:gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:inputType="number"
+                        android:textStyle="bold"
+                        android:letterSpacing=".2"
+                        android:paddingLeft="10dp"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:hint="OTP"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:id="@+id/verify"
+                        android:layout_marginLeft="10pt"
+                        android:layout_marginRight="10pt"
+                        android:text="Verify"
+                        android:letterSpacing=".2"
+                        android:textSize="8pt"
+                        android:padding="4pt"
+                        android:layout_marginTop="50dp"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:typeface="normal"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/button_bg"
+                        android:layout_above="@+id/rl" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:id="@+id/rl">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="20dp"
+                            android:id="@+id/resend"
+                           android:layout_alignParentRight="true"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:inputType="number"
+                            android:text="Resend OTP"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

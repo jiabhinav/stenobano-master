@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.Type_Searching">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/toolbar"
+            android:background="@drawable/actionbar_bg"
+            android:layout_height="60dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_search_black_24dp"
+                    android:hint="Search..."
+                    android:drawableTint="@color/white"
+                    android:singleLine="true"
+                    android:textColorHint="@color/white"
+                    android:imeOptions="actionGo"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/white"
+                    android:layout_toLeftOf="@+id/cancel"
+                    android:id="@+id/search"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_cancel_24dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/cancel"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10pt"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="10dp"
+        android:id="@+id/nested">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/appbar">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_recycler"
+                android:nestedScrollingEnabled="false"
+                android:layout_marginRight="5pt"
+                android:layout_marginLeft="5pt"
+                android:layout_marginTop="2pt">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progress"
+                android:layout_marginTop="20pt"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/profile"
+            android:title="Profile"/>
+        <item
+            android:id="@+id/view_notoficatoon"
+            android:icon="@drawable/notification"
+            android:title="View Notification"/>
+
+        <item
+            android:id="@+id/ofline_dictection"
+            android:icon="@drawable/offline"
+            android:title="Offline file"/>
+        <item
+            android:id="@+id/renewal_history"
+            android:icon="@drawable/history"
+            android:title="Renewal History" />
+        <item
+            android:id="@+id/request"
+            android:icon="@drawable/request"
+            android:title="Requested"/>
+        <item
+            android:id="@+id/change_password"
+            android:icon="@drawable/change_password"
+            android:title="Change Password" />
+
+        <item
+            android:id="@+id/shareapp"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Share App" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/abc2">
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_settings_power_black_24dp"
+            android:title="Logout" />
+    </group>
+    <item android:title="Help/Support">
+        <menu>
+            <item
+                android:id="@+id/chat"
+                android:icon="@drawable/chat_icon"
+                android:title="Ask Any Doubt?" />
+            <item
+                android:id="@+id/call"
+                android:icon="@drawable/ic_help_outline_black_24dp"
+                android:title="Help" />
+            <item
+                android:id="@+id/email"
+                android:icon="@drawable/mail"
+                android:title="nirankarirajender@gmail.com"/>
+
+        </menu>
+    </item>
+
+</menu>

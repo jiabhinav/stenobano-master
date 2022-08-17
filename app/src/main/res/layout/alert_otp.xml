@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10pt"
+        android:paddingTop="20pt">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5pt"
+            android:text="Enter OTP:-"
+            android:textColor="@color/textColor"
+            android:textSize="8pt"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/otp"
+            android:layout_width="50pt"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="10pt"
+            android:background="@drawable/my_border_round"
+            android:hint="OTP Here..."
+            android:inputType="number"
+            android:maxLength="5"
+            android:padding="5pt"
+            android:textAlignment="center"
+            android:textColorHint="#000" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="15pt"
+            android:layout_centerInParent="true"
+            android:background="@color/cardbuttonbackground"
+            android:text="Verify"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="15pt"
+            android:layout_marginLeft="5pt"
+            android:text="Cancel"
+            android:textColor="#f74d04"
+
+            />
+
+        <TextView
+            android:id="@+id/re_send"
+            android:layout_width="wrap_content"
+            android:layout_height="15pt"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5pt"
+            android:text="resend?"
+            android:textColor="#f74d04"
+
+            />
+    </RelativeLayout>
+
+</LinearLayout>

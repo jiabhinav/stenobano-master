@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llads"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/accent2"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_toRightOf="@+id/image"
+            android:id="@+id/desc"
+            android:layout_below="@+id/name"
+            android:text="We at JQR Sports have launched a line of new shoes and not just that we are also giving away huge discounts on the occasion of CHRISTMAS and NEW YEAR. Don’t forget to checkout our huge range products at our store!!! #HappyNewYear"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:id="@+id/post_image"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/lightgray"/>
+    </LinearLayout>
+</layout>

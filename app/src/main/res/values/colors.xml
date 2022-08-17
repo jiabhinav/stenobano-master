@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#079faf</color>
+    <color name="colorPrimaryDark">#482a02</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="material_blue_500">#693703</color>
+    <color name="edittextbackgroud">#7b4c12</color>
+    <color name="bottonbackgroud">#864c03</color>
+    <color name="textcolor">#f9f8f7</color>
+    <color name="cardbuttonbackground">#367fa9</color>
+    <color name="profiletextcolor">#e7e4e4</color>
+    <color name="tablerowborder">#000</color>
+    <color name="textColor">#6e078e</color>
+    <color name="buttontextColor">#fdfcfc</color>
+    <color name="black">#000000</color>
+    <color name="tablerowColor">#bfbaba</color>
+    <color name="gray">#8b8b8b</color>
+    <color name="black_statubsbar">#000000</color>
+    <color name="red">#f90404</color>
+    <color name="login_red">#c1272d</color>
+    <color name="green">#0c7800</color>
+    <color name="bg">#F7FDFD</color>
+    <color name="transparent">#04fefeff</color>
+    <color name="darkgray">#3E3D3D</color>
+    <color name="delete_message_text">#b8b8b8</color>
+    <color name="gainsboro">#DCDCDC</color>
+    <color name="lightgray">#F1F0F0</color>
+    <color name="delete_message_bg">#f2f2f2</color>
+    <color name="transparent_color">#00000000</color>
+    <color name="accent2">#393e46</color>
+</resources>

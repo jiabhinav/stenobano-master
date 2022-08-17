@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardView"
+    android:padding="3pt"
+    android:layout_marginRight="2pt"
+    android:layout_marginLeft="2pt">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Name"
+    android:layout_marginRight="10pt"
+    android:singleLine="true"
+    android:textColor="#464545"
+    android:textSize="16dp"
+    android:id="@+id/name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email"
+        android:layout_marginRight="10pt"
+        android:singleLine="true"
+        android:textColor="#464545"
+        android:textSize="12dp"
+        android:visibility="gone"
+        android:layout_below="@+id/name"
+        android:id="@+id/email"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:rotation="-40"
+        android:padding="2pt"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2pt"
+         android:id="@+id/image_arrow"
+        android:src="@drawable/ic_arrow_upward_red_24dp"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20dp"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="5dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Plan"
+            android:padding="8dp"
+            android:gravity="center"
+            android:id="@+id/text_plan"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plan"
+            android:gravity="center"
+            android:layout_weight=".5"
+            android:padding="8dp"
+            android:id="@+id/text_days"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Plan"
+            android:padding="8dp"
+            android:gravity="center"
+            android:id="@+id/text_amount"/>
+</LinearLayout>
+</androidx.cardview.widget.CardView>

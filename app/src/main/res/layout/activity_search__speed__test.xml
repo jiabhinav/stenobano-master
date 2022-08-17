@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".user.Play_and_Download">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/zoom"
+        android:layout_above="@+id/toolbar"
+  >
+
+    <abhi.example.hp.stenobano.user.TouchImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/img"
+       android:scaleType="fitXY"
+        android:gravity="center"
+        android:adjustViewBounds="true"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/toolbar"
+        android:layout_marginBottom="2dp"
+        android:layout_centerHorizontal="true"
+
+        >
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="20pt"
+            android:layout_height="20pt"
+            />
+        <TextView
+            android:id="@+id/progresstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="7pt" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="2dp"
+        android:id="@+id/toolbar">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textColor="#fff"
+        android:textSize="6pt"
+        android:id="@+id/text"/>
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_marginTop="1pt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Rotate"
+            android:layout_centerVertical="true"
+            android:id="@+id/right"
+            android:background="@drawable/bg_button2"
+            android:textStyle="bold"
+            android:letterSpacing=".1"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/seek_bar"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/play"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/seek_bar"
+            android:background="@drawable/bg_button"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:letterSpacing=".1"
+
+            android:layout_centerInParent="true"
+            android:text="PLAY" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Speed"
+        android:layout_centerVertical="true"
+            android:id="@+id/play_speed"
+            android:background="@drawable/bg_button2"
+            android:textStyle="bold"
+            android:letterSpacing=".1"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/seek_bar"
+           android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "696915853186",
+    "firebase_url": "https://steno-2f06e.firebaseio.com",
+    "project_id": "steno-2f06e",
+    "storage_bucket": "steno-2f06e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696915853186:android:69865fe98cc0fb02",
+        "android_client_info": {
+          "package_name": "abhi.example.hp.stenobano"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696915853186-bhml7rlvtgh9jk8qqn4bhmepbj5rad4o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "abhi.example.hp.stenobano",
+            "certificate_hash": "6bcfd44f0a22f36517307e6f382757464cb67705"
+          }
+        },
+        {
+          "client_id": "696915853186-qut9pojdvh6korq9vtt6g5f5ta2bad94.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8WLdbSR7kjAr3LgwX0RqkS_YvAboSDz4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696915853186-qut9pojdvh6korq9vtt6g5f5ta2bad94.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

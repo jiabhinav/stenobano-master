@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/toolbar"
+        app:titleTextColor="@color/white"
+        android:background="@drawable/actionbar_bg">
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/zoom"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/video_view"
+        >
+        <abhi.example.hp.stenobano.user.TouchImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/img"
+            android:scaleType="fitXY"
+            android:gravity="center"
+            android:adjustViewBounds="true"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:show_timeout="10000"
+        app:fastforward_increment="10000"
+        app:rewind_increment="10000"
+        android:layout_alignParentBottom="true"
+        app:controller_layout_id="@layout/controller"/>
+
+</RelativeLayout>

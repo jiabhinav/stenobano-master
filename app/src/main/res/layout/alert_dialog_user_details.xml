@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f5facd"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="User Details"
+    android:textColor="@color/colorAccent"
+    android:padding="3pt"
+    android:textSize="10pt"
+    android:textStyle="bold"
+    android:gravity="center_horizontal|center_vertical"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        android:layout_centerInParent="true"/>
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15pt"
+    android:id="@+id/rl">
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tablerowColor">
+
+    </View>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5pt"
+    >
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID:-"
+            android:textSize="8pt"
+
+            />
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="id"
+            android:textStyle="bold"
+            android:textSize="8pt"
+            android:layout_marginLeft="10pt"
+            android:id="@+id/id"/>
+
+
+    </TableRow>
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tablerowColor">
+
+    </View>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5pt"
+   >
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name:-"
+            android:textSize="8pt"
+
+            />
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textSize="8pt"
+            android:textStyle="bold"
+            android:layout_marginLeft="10pt"
+            android:id="@+id/name"/>
+
+
+    </TableRow>
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tablerowColor">
+
+    </View>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5pt"
+       >
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email:-"
+            android:textSize="8pt"
+
+            />
+        <TextView android:layout_width="100pt"
+            android:layout_height="wrap_content"
+            android:text="email"
+            android:inputType="textMultiLine"
+            android:fitsSystemWindows="true"
+            android:textSize="8pt"
+            android:gravity="left"
+            android:maxLines="4"
+            android:textStyle="bold"
+            android:singleLine="false"
+            android:layout_marginLeft="10pt"
+            android:id="@+id/email"/>
+
+
+    </TableRow>
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tablerowColor">
+
+    </View>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5pt">
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile:-"
+            android:textSize="8pt"
+
+            />
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="mobile"
+            android:textSize="8pt"
+            android:textStyle="bold"
+            android:layout_marginLeft="10pt"
+            android:id="@+id/mobile"/>
+
+
+    </TableRow>
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tablerowColor">
+
+    </View>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5pt">
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="password:-"
+            android:textSize="8pt"
+
+            />
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="password"
+            android:textSize="8pt"
+            android:textStyle="bold"
+            android:layout_marginLeft="10pt"
+            android:id="@+id/password"/>
+
+
+    </TableRow>
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tablerowColor">
+
+    </View>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5pt">
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register Date:-"
+            android:textSize="8pt"
+
+            />
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="mobile"
+            android:textSize="8pt"
+            android:textStyle="bold"
+            android:layout_marginLeft="10pt"
+            android:id="@+id/date"/>
+
+
+    </TableRow>
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tablerowColor">
+
+    </View>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5pt">
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exp. Date:-"
+            android:textSize="8pt"
+
+            />
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="mobile"
+            android:textStyle="bold"
+            android:textSize="8pt"
+            android:layout_marginLeft="10pt"
+            android:id="@+id/expdate"/>
+
+
+    </TableRow>
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tablerowColor">
+
+    </View>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5pt">
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status:-"
+            android:textSize="8pt"
+
+            />
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="mobile"
+            android:textSize="8pt"
+            android:textStyle="bold"
+            android:layout_marginLeft="10pt"
+            android:id="@+id/status"/>
+
+
+    </TableRow>
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tablerowColor">
+
+    </View>
+</TableLayout>
+</RelativeLayout>

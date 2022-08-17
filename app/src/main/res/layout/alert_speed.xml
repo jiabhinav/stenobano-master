@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:id="@+id/rl"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/close"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="right"
+            android:tint="@color/red"
+            android:src="@drawable/ic_close_black_24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Low/Hight speed"
+            android:padding="2dp"
+            android:id="@+id/text_cancel"
+            android:layout_below="@+id/close"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:letterSpacing=".1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100 Speed"
+            android:padding="10dp"
+            android:id="@+id/distance"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="4dp"
+            android:layout_below="@+id/text_cancel"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/distance"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="50dp"
+            android:max="160"
+            android:maxWidth="15dp"
+            android:maxHeight="15dp"
+            android:minWidth="15dp"
+            android:minHeight="15dp"
+            android:progress="100"
+            android:id="@+id/seekbar"
+            android:progressDrawable="@drawable/custom_seekbar"
+            android:thumb="@drawable/custom_thumb">
+
+        </SeekBar>
+    </RelativeLayout>
+</RelativeLayout>

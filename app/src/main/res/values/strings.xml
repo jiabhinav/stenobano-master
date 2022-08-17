@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Steno Bano</string>
+    <string name="title_activity_admin__home">Admin_Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_user__home">User_Home</string>
+    <string name="enter_job_type_here">Enter job type here…</string>
+    <string name="todo">TODO</string>
+    <string name="enter_id_or_name_here">Enter id or name here…</string>
+    <string name="text">text</string>
+    <string name="hide">Hide</string>
+    <string name="_2">2</string>
+    <string name="dd">/</string>
+    <string name="_0">0</string>
+
+    <string name="note">NOTE: Your device does not registered ,if you want to login then you have to send request to admin after that you can access,only one user can access at a  one device,if you are using multiple device in one month then your account may be block.</string>
+    <string-array name="plan">
+        <item>Yearly</item>
+        <item>Trial</item>
+    </string-array>
+
+    <string-array name="reason">
+        <item>Purchase new device</item>
+        <item>Theft device</item>
+        <item>Device does not support</item>
+        <item>Device damage</item>
+    </string-array>
+</resources>

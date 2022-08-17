@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10pt">
+
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:singleLine="true"
+
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt"
+        android:background="@drawable/my_border_round"
+        android:inputType="textEmailAddress"
+        android:padding="5pt"
+
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Register Email Address"
+
+        android:textColorHint="@color/gray" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Enter OTP"
+        android:layout_below="@+id/phone"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="14dp"
+        android:id="@+id/text"
+        android:visibility="gone"
+        android:padding="2dp"
+        android:textStyle="italic" />
+    <EditText
+        android:id="@+id/otp"
+        android:layout_width="200dp"
+        android:maxLength="5"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_border_round"
+        android:inputType="number"
+        android:padding="5pt"
+
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:hint="OTP Here..."
+
+        android:textColorHint="@color/gray" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/cancel"
+    android:layout_below="@+id/otp"
+    android:layout_toLeftOf="@+id/ok"
+    android:padding="4dp"
+    android:layout_marginTop="20dp"
+    android:textColor="@color/gray"
+    android:textSize="16dp"
+    android:layout_marginRight="20dp"
+    android:text="Cancel"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ok"
+        android:layout_below="@+id/otp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/red"
+        android:layout_alignParentRight="true"
+        android:padding="4dp"
+        android:textSize="16dp"
+        android:layout_marginRight="20dp"
+        android:text="OK"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/verify"
+        android:layout_below="@+id/otp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/red"
+        android:layout_alignParentRight="true"
+        android:padding="4dp"
+        android:visibility="gone"
+        android:textSize="16dp"
+        android:layout_marginRight="20dp"
+        android:text="Verify"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"/>
+</RelativeLayout>

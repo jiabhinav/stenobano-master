@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="8pt"
+        android:layout_marginTop="5pt"
+        android:layout_gravity="center_horizontal"
+        android:text="Please select any one option"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="1pt"
+        android:background="#e4850a"></View>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:layout_marginLeft="2pt">
+
+<RadioButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Phrases and its Dictation"
+    android:id="@+id/phreses"
+    android:padding="5pt"
+    android:textSize="8pt"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Legal Phrases and its diction"
+        android:id="@+id/leagal"
+        android:padding="5pt"
+        android:textSize="8pt"/>
+        <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contraction and its dication"
+        android:id="@+id/contraction"
+        android:padding="5pt"
+        android:textSize="8pt"/>
+        <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Short Form and  its dication"
+        android:id="@+id/shortform"
+        android:padding="5pt"
+        android:textSize="8pt"/>
+        <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed Test 80/100 wpm"
+        android:id="@+id/job_speed_test"
+        android:padding="5pt"
+        android:textSize="8pt"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Long Speed Test"
+            android:id="@+id/long_speed_test"
+            android:padding="5pt"
+            android:textSize="8pt"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Short Speed Test"
+            android:id="@+id/sort_speed_test"
+            android:padding="5pt"
+            android:textSize="8pt"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Legal Speed Test"
+            android:id="@+id/legal_speed_test"
+            android:padding="5pt"
+            android:textSize="8pt"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KC Special Word"
+            android:id="@+id/kc_special_word"
+            android:padding="5pt"
+            android:textSize="8pt"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N.E.Dictation"
+            android:id="@+id/ne_dicitation"
+            android:padding="5pt"
+            android:textSize="8pt"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Leagal Words"
+            android:id="@+id/leaglword"
+            android:padding="5pt"
+            android:textSize="8pt"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Words Of The Week"
+            android:id="@+id/wordofweek"
+            android:padding="5pt"
+            android:textSize="8pt"/>
+    </RadioGroup>
+</LinearLayout>
+</ScrollView>

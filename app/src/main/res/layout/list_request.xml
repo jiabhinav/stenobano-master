@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal"
+    android:padding="5dip"
+    android:id="@+id/rl">
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Rihanna"
+        android:textColor="#040404"
+        android:typeface="normal"
+        android:singleLine="true"
+        android:layout_marginRight="20dp"
+        android:textSize="12dp"
+        android:textStyle="normal"/>
+    <TextView
+        android:id="@+id/reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/image"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
+        android:padding="4dp"
+        android:text=""
+        android:textColor="#040404"
+        android:layout_below="@+id/date"
+        android:typeface="normal"
+        android:singleLine="true"
+        android:layout_marginRight="20dp"
+        android:textSize="16dp"
+        android:layout_toLeftOf="@+id/status"
+        android:textStyle="normal"/>
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/image"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
+        android:text="Pending"
+        android:padding="4dp"
+        android:textColor="@color/red"
+        android:layout_below="@+id/date"
+        android:typeface="normal"
+        android:layout_alignParentRight="true"
+        android:singleLine="true"
+        android:textSize="16dp"
+        android:textStyle="normal"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/status"
+        android:background="@color/gray"/>
+
+</RelativeLayout>
